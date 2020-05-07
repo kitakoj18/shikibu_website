@@ -1,0 +1,31 @@
+<header id='headerContent'>
+
+    <div id='titleContainer'>
+        <h1 class='title'>Shikibu Brown Rice Sushi</h1>
+    </div>
+
+    <hr>
+
+    <div id='linkContainer'>
+
+        <ul class='links'>
+            
+            <li><a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a></li>
+            <li><a class="<%= path === '/menu' ? 'active' : '' %>" href="/menu">Menu</a>
+                <ul class='dropdown-menu'>
+                    <li><a class='dropdown-item' href="/menu">Menu</a></li>
+                    <li><a class='dropdown-item' href="/lunch-menu">Lunch Specials</a></li>
+                    <li><a class='dropdown-item'href="/specials">Special Rolls</a></li>
+                </ul>
+            </li>
+            <li><a class="<%= path === '/gallery' ? 'active' : '' %>" href="/gallery">Gallery</a></li>
+            <li><a class="<%= path === '/about' ? 'active' : '' %>" href="/about">About</a></li>
+            <li><a class="<%= path === '/contact' ? 'active' : '' %>" href="/contact">Contact Us</a></li>
+
+        </ul>
+
+    </div>
+
+    <hr>
+
+</header>
