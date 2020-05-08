@@ -1,7 +1,8 @@
 exports.getHome = (req, res, next) =>{
     res.render('home', {
         pageTitle: 'Shikibu - Home',
-        path: '/'
+        path: '/',
+        numPics: 3
     })
 }
 

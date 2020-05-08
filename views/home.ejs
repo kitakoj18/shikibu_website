@@ -1,7 +1,25 @@
 <%- include('./includes/head.ejs') %>
 
+    <link rel="stylesheet" href="/css/home.css">
     </head>
 
     <body>
         <%- include('./includes/header.ejs') %>
+
+        <div class="picture-container">
+            <div class="picture-slide">
+                <img class='picture' src='/imgs/outside.jpg' alt="Outside">
+                <img class='picture' src='/imgs/combo.jpg' alt="Combination Plate">
+                <img class='picture' src='/imgs/salmon.jpg' alt="Salmon Rolls">
+            </div>
+        </div>
+
+        <div class='dot-container'>
+            <!-- <% for(var i=0; i < numPics; i++) { %> -->
+            <span class='dot'></span>
+            <!-- <% } %> -->
+        </div>
+
+        <script src='/js/picslide.js'></script>
+
     </body>

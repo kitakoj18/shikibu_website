@@ -53,23 +53,28 @@ ul{
 	margin: 15px auto;
 }
 
+.links{
+	display: flex;
+	justify-content: space-evenly;
+    font-size: 18px;
+    position: relative;
+    line-height: 11px;
+}
+
 .dropdown-menu{
     display: none;
-    position: absolute;
-    width: 5px;
-    height: auto;
-    border: 1px solid rgb(156, 155, 156);
-    text-align: center;
-    font-size: 16px;
-    line-height: 30px;
-    
-    /* z-index: 1; */
 }
 
 li:hover .dropdown-menu{
     display: block;
-    top: 250px;
-    left: 773px;
+    position: absolute;
+    text-align: center;
+    left: 61px;
+    z-index: 1;
+    height: auto;
+    border: 1px solid rgb(156, 155, 156);
+    font-size: 16px;
+    line-height: 30px; 
 }
 
 .dropdown-menu>li>a{
@@ -78,14 +83,4 @@ li:hover .dropdown-menu{
 
 .dropdown-menu>li>a:hover{
     color: tan;
-}
-
-#link-container{
-    float: left;
-}
-
-.links{
-	display: flex;
-	justify-content: space-evenly;
-	font-size: 18px;
 }
